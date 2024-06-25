@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Navigation Bar</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="images/logo1.jpg" alt="Deep Thought Logo" class="logo">
+            <span class="brand-name">DEEP <strong>THOUGHT</strong></span>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav-icons">
+                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                <li><a href="#"><i class="fas fa-cog"></i></a></li>
+                <li><a href="#"><i class="fas fa-bell"></i></a></li>       
+                <li><a href="#"><img src="images/avatar.jpg" alt="User Avatar" class="avatar"></a></li>
+                <li><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <span class="title">Technical Project Manager</span>
+        <button class="submit-btn">Submit task</button>
+    </div>
+
+    <div class="overlay">
+        <div class="text-box">
+            <span class="overlay-text">
+                <strong>Explore the world of management</strong><br>
+                As a project manager, you can play important role in leading a project through initiation, planning,
+                 monitoring, controlling and completion. How? Do you want to manage each and every step of your life?
+            </span>
+        </div>
+    </div>
+
+    <div class="compressed-card">
+        <button class="expand-btn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+
+    <div class="expanded-card">
+        <button class="compress-btn"><i class="fas fa-chevron-left"></i></button>
+        <div class="rectangle"></div>
+        <div class="content">
+        </div>
+    </div>
+
+    <div class="card-container">
+
+
+        <div class="card">
+            <div class="rectangle">
+                <span class="rectangle1-text">Technical Project Management</span>
+                <i class="fas fa-info-circle info-icon1"></i>
+            </div>
+            <div class="additional-text-box">
+                <strong>Description : </strong>Story of Alignment Scope of Agility Specific Accountable Staggering Approach 
+            </div>
+            <div class="video-container">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/9KdYCXqWVNo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+
+
+        <div class="card">
+            <div class="rectangle">
+                <span class="rectangle-text">Threadbuild</span>
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="additional-text-box">
+                <strong>Description : </strong> Watch the video and threadbuild, and jot out key threads while watching the video
+            </div>
+            <div class="card threadbuild-card">
+                <div class="rectangle">
+                    <span class="rectangle-text">Thread A</span>
+                    <i class="fas fa-chevron-left compress-btn"></i>
+                </div>
+                <div class="threadbuild-content">
+                    <div class="threadbuild-row">
+                        <div class="threadbuild-column">
+                            <div class="threadbuild-box">
+                                <label for="sub-thread-1">Sub thread 1</label>
+                                <textarea id="sub-thread-1" placeholder="Enter Text here"></textarea>
+                            </div>
+                        </div>
+                        <div class="threadbuild-column">
+                            <div class="threadbuild-box">
+                                <label for="sub-interpretation-1">Sub Interpretation 1</label>
+                                <textarea id="sub-interpretation-1" placeholder="Enter Text here"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="threadbuild-actions">
+                        <i class="fas fa-lightbulb"></i>
+                        <i class="fas fa-comment-dots"></i>
+                        <i class="fas fa-question-circle"></i>
+                        <i class="fas fa-arrow-down"></i>
+                        <select class="category-select">
+                            <option>Select Category</option>
+                        </select>
+                        <select class="process-select">
+                            <option>Select Process</option>
+                        </select>
+                    </div>
+                    <button class="sub-thread-btn">+ Sub-thread</button>
+                    <div class="summary-box">
+                        <label for="summary-thread-a">Summary for Thread A</label>
+                        <textarea id="summary-thread-a" placeholder="Enter Text Here"></textarea>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+    <div class="card-container">
+        <div class="card">
+            <div class="rectangle">
+                <span class="rectangle-text">Structure your Pointers</span>
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="card3-text-box">
+                <strong>Description : </strong> Write a 300-400 word article from your thread .
+                 Publish your understanding and showcase your understanding to the entire world 
+            </div>
+            <div class="word-container">
+                <span class="word">Title</span>
+            </div>
+            <div class="textbox-container">
+                <input type="text" class="textbox" placeholder="Enter your text here">
+            </div>
+            <div class="word-container2">
+                <span class="word">Content</span>
+            </div>
+            <div class="rectangle2">
+                <button class="rect-btn">File</button>
+                <button class="rect-btn">Edit</button>
+                <button class="rect-btn">View</button>
+                <button class="rect-btn">Insert</button>
+                <button class="rect-btn">Format</button>
+                <button class="rect-btn">Tools</button>
+                <button class="rect-btn">Table</button>
+                <button class="rect-btn">Help</button>
+                <br><br>
+                <div class="icons-container">
+                    <i class="fas fa-undo"></i>
+                    <i class="fas fa-redo"></i>
+                    <span>Paragraph</span>
+                    <i class="fas fa-ellipsis-h"></i>
+                </div>
+            </div>
+            
+             <div class="box-below"></div>
+
+        </div>
+
+
+
+        <div class="card">
+            <div class="rectangle">
+                <span class="rectangle-text">4SA Method</span>
+                <i class="fas fa-info-circle info-icon"></i>
+            </div>
+            <div class="card3-text-box">
+                <strong>Description : </strong> To Explore more read more
+            </div>
+            <div class="word-container">
+                <span class="word">Introduction</span>
+            </div>
+            <div class="textbox-container">
+                <input type="text" class="textbox" placeholder="The 4SA Method , How to bring a idea into progress?">
+            </div>
+            <div class="word-container2">
+                <span class="word">Thread A</span>
+            </div>
+            <div class="rectangle2">
+                <input type="text" class="textbox" placeholder="How are you going to develop your stratergy? Which method are you going to use to develop a strategy? What if the project is lengthy?">
+            </div>
+            <div class="word-container2">
+                <span class="word">Example 1</span>
+            </div>
+            <div class="rectangle2">
+                <input type="text" class="textbox" placeholder="You have a concept, How will you put into progress?">
+            </div>
+            <div class="box-below"></div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        document.querySelector('.expand-btn').addEventListener('click', function() {
+    document.querySelector('.compressed-card').style.display = 'none';
+    document.querySelector('.expanded-card').style.display = 'block';
+});
+
+document.querySelector('.compress-btn').addEventListener('click', function() {
+    document.querySelector('.expanded-card').style.display = 'none';
+    document.querySelector('.compressed-card').style.display = 'flex';
+});
+
+    </script>
+</body>
+</html>

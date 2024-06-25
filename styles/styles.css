@@ -1,0 +1,548 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 10px 20px;
+    border: 1px solid #e0e0e0;
+    width: 100%;
+    max-width: 1440px;
+    height: 50px;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.brand-name {
+    font-size: 20px;
+    color: #333;
+}
+
+.brand-name strong {
+    color: #0056b3;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    background-color: #d1c4e9;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.nav-icons {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-icons li {
+    margin-right: 15px;
+}
+
+.nav-icons img {
+    width: 24px;
+    height: 24px;
+}
+
+.avatar {
+    border-radius: 60%;
+    width: 60px;
+    height: 60px;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    opacity: 0.8;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    color: #0056b3;
+    white-space: nowrap;
+}
+
+.submit-btn {
+    background-color: #0056b3;
+    color: white;
+    white-space: nowrap;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 121px;
+    height: 36px;
+}
+
+.overlay {
+    width: 1066px;
+    height: 135px;
+    background-color: #a5bdef;
+    border-radius: 5px 0 0 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 187px;
+    left: 187px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-box {
+    width: 1012px;
+    height: 85px;
+    background-color: #a5bdef;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-text {
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+}
+
+.overlay-text strong {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    display: block;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 960px;
+    margin: 20px auto;
+    position: relative;
+    top: 260px;
+}
+
+.card {
+    width: calc(50% - 10px);
+    height: 580px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    opacity: 1;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.rectangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    width: 100%;
+    height: 50px;
+    background-color: #000000;
+    border-radius: 15px 15px 0 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff; /* Text color */
+}
+
+.rectangle-text {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    justify-content: left;
+    margin-left: 40px;
+    
+}
+
+/* Styles specific to Threadbuild card */
+.threadbuild-card {
+    width: 469px;
+    height: 520px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    opacity: 1;
+    top: 20%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    border: 1px solid black;
+    margin-bottom: 20px;
+    overflow: hidden;
+    right: 10px;
+}
+
+/* Styles specific to Threadbuild card */
+.threadbuild-card {
+    height: 90%;
+    width: 95%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    padding: 20px;
+    right: 15px;
+    bottom: 50px;
+}
+
+.threadbuild-card .rectangle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f0f0;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 15px 15px 0 0;
+}
+
+.threadbuild-content {
+    padding: 20px;
+}
+
+.threadbuild-row {
+    display: flex;
+    
+    justify-content: space-between;
+}
+
+.threadbuild-column {
+    width: 40%;
+}
+
+.threadbuild-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.threadbuild-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.threadbuild-box textarea {
+    width: 100%;
+    height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+.threadbuild-actions {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.threadbuild-actions i {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.category-select, .process-select {
+    padding: 5px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sub-thread-btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.summary-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.summary-box label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.summary-box textarea {
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+
+
+.info-icon {
+    font-size: 16px;
+    cursor: pointer;
+    align-items: flex-end;
+    justify-content: right;
+    margin-left: 100px;
+}
+
+.rectangle1-text {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+    white-space: nowrap;
+    justify-content: left;
+    margin-left: 20px;
+    
+}
+
+.info-icon1 {
+    font-size: 16px;
+    cursor: pointer;
+    align-items: flex-end;
+    justify-content: right;
+    margin-left: 50px;
+}
+
+.additional-text-box {
+    width: 453px;
+    height: 83px;
+    top: 60px;
+    left: 0px;
+    gap: 0px;
+    opacity: 1;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 21.79px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    
+}
+
+.additional-text-box strong {
+    font-weight: 700;
+}
+
+.video-container {
+    width: 480px;
+    height: 291px;
+    top: 150px;
+    left: 0px;
+    gap: 0px;
+    opacity: 1;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card3-text-box {
+    width: 453px;
+    height: 83px;
+    top: 60px;
+    left: 0px;
+    gap: 0px;
+    opacity: 1;
+    position: absolute;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 21.79px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    
+}
+
+.word-container {
+    position: absolute;
+    width: 479px;
+    height: 399px;
+    top: 160px;
+    left: 10px;
+    gap: 0px;
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid transparent;
+    opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+.word-container2 {
+    position: absolute;
+    width: 479px;
+    height: 399px;
+    top: 280px;
+    left: 10px;
+    gap: 0px;
+    border-radius: 0px 0px 15px 15px;
+    border: 1px solid transparent;
+    opacity: 1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 21.79px;
+    letter-spacing: 0.02em;
+    text-align: left;
+}
+
+
+.textbox-container {
+    position: absolute;
+    width: 422px;
+    height: 43px;
+    top: 200px;
+    left: 10px;
+    gap: 0px;
+    border-radius: 5px 0px 0px 0px;
+    opacity: 1;
+}
+
+.rectangle2 {
+    width: 422px;
+    height: 82px; /* Adjust height to fit content */
+    top: 320px;
+    left: 10px;
+    border-radius: 5px 5px 0px 0px;
+    opacity: 1; /* Changed opacity to 1 */
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+}
+
+.icons-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icons */
+}
+
+.icons-container i, .icons-container span {
+    margin-right: 10px; /* Add space between individual items */
+}
+
+
+.box-below {
+    width: 422px;
+    height: 150px;
+    top: 420px;
+    left: 10px;
+    gap: 0px;
+    opacity: 1; /* Changed opacity to 1 */
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 10px;
+    border-radius: 0 0 5px 5px;
+}
+
+
+.textbox {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+.expanded-card {
+    position: absolute;
+    top: 90px;
+    left: 0;
+    width: 392px;
+    height: 742px;
+    border-radius: 0 20px 0 0;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.compress-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.content {
+    padding: 20px;
+}
+
+.content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content li {
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+
